@@ -1,1 +1,118 @@
-readme
+# 🌐 Metaverse Rang — Language Translator (`i18n`)
+
+**The Official Multilingual & Localization Repository for the MetaRang (Metaverse Rang) Ecosystem**
+
+[🚀 Project Board](https://github.com/orgs/iranpsc/projects/2) • [📦 Main Repository](https://github.com/iranpsc/Metaverse-Rang-language-translator) • [🏢 Organization (`iranpsc`)](https://github.com/iranpsc)
+
+## 📖 Overview
+
+Welcome to the **[Metaverse Rang Language Translator](https://github.com/iranpsc/Metaverse-Rang-language-translator)** repository!
+
+**MetaRang (Metaverse Rang)** is a 3D intelligent parallel world designed for global interaction, education, commerce, and decentralized governance. Because MetaRang connects citizens across borders, providing an accurate, natural, and culturally appropriate user experience in multiple languages is one of our core priorities.
+
+This public repository serves as the central hub for **developing, managing, and planning localization (`i18n`)** across the MetaRang platform. Community members, native speakers, translators, and developers worldwide are invited to review existing translations, improve phrasing, and help add new languages to meet the needs of our global community.
+
+## 🗺️ Supported Languages
+
+Currently, the repository maintains full localization across **5 active languages** (`1,817` standardized translation keys per file):
+
+| Language | Native Name | ISO Code | File Name | Direction | Status |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Persian** | فارسی | `fa` | `json-FA.json` | RTL | ✅ Active |
+| **English** | English | `en` | `json-EN.json` | LTR | ✅ Active |
+| **Arabic** | العربية | `ar` | `json-AR.json` | RTL | ✅ Active |
+| **Russian** | Русский | `ru` (`ry`) | `json-RU.json` | LTR | ✅ Active |
+| **Chinese (Simplified)** | 简体中文 | `zh` | `json-ZH.json` | LTR | ✅ Active |
+
+> 💡 **Want to add a new language?** Check out our [Project Planning Board](https://github.com/orgs/iranpsc/projects/2) or open an Issue in the [repository](https://github.com/iranpsc/Metaverse-Rang-language-translator) to propose a new locale (e.g., Turkish `tr`, Spanish `es`, French `fr`, German `de`, Hindi `hi`, etc.).
+
+## 📂 File Structure & Key Format
+
+All translation files follow a strict, flat key-value JSON schema to ensure seamless integration across MetaRang's frontend applications. Every language file must mirror the exact keys of `json-EN.json`.
+
+```json
+{
+    "": "choose",
+    "1": "login to MetaRGB",
+    "2": "Enter your email",
+    "3": "Password",
+    "4": "login",
+    "5": "Remember me"
+}
+```
+
+### Key Terminology Guidelines
+
+When translating or reviewing strings, please preserve the following core ecosystem terms consistently:
+
+* **Brand & Platform Names**: Keep `MetaRGB`, `MetaRang` (or `Metarang`), and `WebRANG` recognizable according to target language conventions.
+* **Currencies & Tokens**: Keep token symbols (`PSC`, `PSD`, `IRR`, `USD`, `BNB`, etc.) in uppercase Latin characters. Localize currency names (`Rial`, `Toman`) naturally where appropriate.
+* **VOD (Virtual Ownership Deed)**: Always retain the acronym `VOD` when referring to digital land/property deeds.
+* **Citizen & Governance Levels**: Ensure consistent terminology for roles such as *Citizen*, *Reporter*, *Developer*, *Inspector*, *Businessman*, *Lawyer*, *City Council*, *Mayor*, *Governor*, *Minister*, *Judge*, and *Legislator*.
+
+## 🤝 How to Contribute
+
+We welcome contributions from native speakers, linguists, and community members! Whether you are fixing a typo, refining UI terminology, or translating the platform into a new language, here is how you can participate:
+
+### 1. Improving Existing Translations
+
+1. **Fork** the [repository](https://github.com/iranpsc/Metaverse-Rang-language-translator) to your GitHub account.
+2. Create a new branch for your updates:
+   ```bash
+   git checkout -b fix/improve-ar-translations
+   ```
+3. Edit the corresponding JSON file (e.g., `json-AR.json`, `json-RU.json`, `json-ZH.json`) while keeping the JSON keys untouched.
+4. Commit your changes with a clear message:
+   ```bash
+   git commit -m "fix(ar): refine property management terminology in keys 1783-1810"
+   ```
+5. Push the branch and open a **Pull Request (PR)** against the `main` branch.
+
+### 2. Adding a New Language
+
+1. Check the [MetaRang Project Board](https://github.com/orgs/iranpsc/projects/2) to see if the language is already in progress.
+2. Copy `json-EN.json` and rename it using the target language's uppercase ISO 639-1 code (e.g., `json-TR.json` for Turkish, `json-ES.json` for Spanish).
+3. Translate only the **values** on the right-hand side—**do not** modify, add, or delete any keys on the left-hand side.
+4. Validate your JSON syntax before submitting a Pull Request.
+
+## ✅ Quality Checklist Before Submitting a PR
+
+Before opening a Pull Request, please verify that:
+
+* ✅ **Valid JSON Syntax**: The file parses cleanly without trailing commas or unescaped quotes (`\"`).
+* ✅ **Exact Key Parity**: All `1,817` keys match `json-EN.json` in exact order (`""` through `"1927"`).
+* ✅ **UTF-8 Encoding**: The file is saved in standard `UTF-8` encoding with 4-space indentation.
+* ✅ **Contextual Accuracy**: Short strings (used for buttons, labels, and navigation menus) are concise so they do not break UI layouts.
+
+## 📋 Project Management & Roadmap
+
+All translation tasks, language expansion milestones, and review workflows are tracked publicly on our GitHub Project board:
+
+👉 **[MetaRang Localization Project Board (`iranpsc/projects/2`)](https://github.com/orgs/iranpsc/projects/2)**
+
+## 🇮🇷 راهنمای فارسی (Persian Guide)
+
+### 🎯 درباره مخزن و هدف پروژه
+
+این مخزن رسمی متعلق به پروژه **متارنگ (MetaRang)** است و با هدف **توسعه، مدیریت و برنامه‌ریزی برای افزودن و بهبود زبان‌های پلتفرم** ایجاد شده است. تمامی فایل‌های ترجمه متاورس رنگ در این مخزن عمومی قرار دارند تا با مشارکت جامعه جهانی، مسیر ترجمه و بومی‌سازی متون به‌طور مستمر بهبود یابد.
+
+اگر علاقه‌مند به مشارکت در بهبود متون فعلی یا افزودن زبان‌های جدید هستید، می‌توانید از طریق همین مخزن عمومی اقدام نمایید.
+
+### 🌍 زبان‌های فعال فعلی
+
+در حال حاضر ۵ زبان زیر به‌طور کامل در مخزن فعال هستند:
+
+* **فارسی (`fa`)**
+* **انگلیسی (`en`)**
+* **عربی (`ar`)**
+* **روسی (`ru` / `ry`)**
+* **چینی (`zh`)**
+
+### 🛠️ نحوه مشارکت در توسعه ترجمه‌ها
+
+1. ابتدا مخزن [Metaverse-Rang-language-translator](https://github.com/iranpsc/Metaverse-Rang-language-translator) را **Fork** کنید.
+2. ساختار کلیدها (شماره‌های سمت چپ در فایل JSON) را به هیچ عنوان تغییر ندهید و فقط متون مقابل کلیدها را ویرایش یا ترجمه کنید.
+3. برای اطلاع از برنامه‌ریزی زبان‌های جدید و وضعیت وظایف، به [بورد مدیریت پروژه متارنگ](https://github.com/orgs/iranpsc/projects/2) مراجعه کنید.
+4. پس از اعمال تغییرات و اطمینان از صحت ساختار فایل JSON، درخواست خود را در قالب یک **Pull Request** ارسال نمایید.
+
+**Built with ❤️ by the [MetaRang (`iranpsc`)](https://github.com/iranpsc) Community**
